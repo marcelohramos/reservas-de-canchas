@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <header>
+        <img src="maquetado/soccer-ball-3d-illustration-png.webp" alt="">
+        <h1>Reservas canchas</h1>
+    </header>
+    <section class="contenedor">
+        <nav>
+            <li>
+                <a href="">Inicio</a>
+            </li>
+            <li>
+                <a href="">Mis reservas</a>
+            </li>
+            <li>
+                <a href="">Canchas</a>
+            </li>
+            <li>
+                <a href="">Perfil</a>
+            </li>
+        </nav>
+        <div class="reservas">
+            <h2>Reservar canchas</h2>
+            <div class="deportes">
+                <div class="canchas">
+                    <label>
+                        <input type="radio" name="cancha" id="futbol" value="120">
+                        <span class="verificacion" >✓</span>
+                        <img src="maquetado/futbol.avif" alt="">
+                        <h4>cancha de futbol</h4>
+                        <p>el costo por hora <br>
+                        120 Bs</p>
+
+                    </label>
+                </div>
+                <div class="canchas">
+                    <label>
+                        <input type="radio" name="cancha" id="basquet" value="70">
+                        <span class="verificacion">✓</span>
+                        <img src="maquetado/cesto.webp" alt="">
+                        <h4>cancha de basquet</h4>
+                        <p>el costo por hora <br>
+                        70 Bs</p>
+                    </label>
+                </div>
+                <div class="canchas">
+                    <label>
+                        <input type="radio" name="cancha" id="voley" value="60">
+                        <span class="verificacion">✓</span>
+                        <img src="maquetado/canchas de boleibol.jpg" alt="">
+                        <h4>cancha de boleibol</h4>
+                        <p>el costo por hora <br>
+                        60 Bs</p>
+                    </label>
+                </div>
+            </div>
+            <div>
+                <h2>Datos Personales</h2>
+                <div class="registro">
+                    <div class="dato1">
+                        <label for="">nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="ingrese el nombre completo">
+                        <label for="">numero de contactos</label>
+                        <input type="number" name="numero" id="numero">
+                        <label for="">fecha</label>
+                        <input type="date" id="fecha">
+                        <label for="">hora de inicio</label>
+                        <select name="" id="inicio">
+                            <option value="" disabled selected>ingrese la hora</option>
+                            <option value="8">8:00 am</option>
+                            <option value="9">9:00 am</option>
+                            <option value="10">10:00 am</option>
+                            <option value="11">11:00 am</option>
+                            <option value="12">12:00 am</option>
+                            <option value="13">13:00 pm</option>
+                            <option value="14">14:00 pm</option>
+                            <option value="15">15:00 pm</option>
+
+                        </select>
+                    </div>
+                    <div class="dato2">
+                        <label for="">tiempo utilizado </label>
+                        <select name="" id="tiempo">
+                            <option value="" disabled selected>- elige un numero-</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+
+                        </select>
+                        <label for="">metodo de pago</label>
+                        <select name="" id="">
+                            <option value="" disabled selected>- escoja un metodo de pago -</option>
+                            <option value="">numero de targeta</option>
+                            <option value="">metodo por qr</option>
+                            <option value="">aproximarce al establecimiento</option>
+                        </select>
+    
+                    </div>
+                </div>
+                <div class="boton">
+                    <button onclick="registro()">registar</button>
+                </div>
+            </div>
+        </div>
+         <div class="organizar">
+            <h2>verificacion de datos</h2>
+            <table id="tablacarrito">
+                <thead>
+                    <tr>
+                        <th>cancha</th>
+                        <th>precio</th>
+                        <th>hora</th>
+                        <th>fecha</th>
+                        <th>inicio</th>
+                        <th>fin</th>
+                        <th>borrar</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <h3>total a pagar $<span id="totalpagar">0</span></h3>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
